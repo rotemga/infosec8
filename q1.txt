@@ -1,0 +1,9 @@
+a. I filtered with 'http'
+
+b. I checked if the packet is TCP and has payload in it (packet.haslayer(S.Raw))
+	and I checked that the dst port of the packet is port 80 (So I can know if it's from the client to the server).
+
+c.I extract the payload from the packet, and then use urlparse to parse it.
+	Then I extracted the username and password from the result.
+	If both exist it's return the tuple (username, password).
+	In Addition, I checked that the host is WEBSITE.

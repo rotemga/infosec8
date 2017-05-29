@@ -1,0 +1,3 @@
+I created a TCP packet.
+The flags is FIN ACK, because we want to close connection.
+I swap the IP/PORT dst with the IP/PORT src because the packet is from the client to the server, and we want to send back packet from the server to the client.
